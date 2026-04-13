@@ -6,7 +6,7 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   {
-    year: "2019",
+    year: "2020",
     label: "Started learning programming & Python",
     tags: ["Python", "Git"],
   },
@@ -34,5 +34,10 @@ export const timeline: TimelineItem[] = [
     year: "2025",
     label: "Building portfolio & open for collaboration",
     tags: ["Next.js", "Framer Motion", "Supabase"],
+  },
+  {
+    year: "2026",
+    label: "Keep Learning, Building, and Sharing",
+    tags: ["Learning", "Building", "Sharing"],
   },
 ];
