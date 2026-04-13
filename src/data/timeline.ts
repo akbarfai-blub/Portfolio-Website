@@ -6,38 +6,38 @@ export type TimelineItem = {
 
 export const timeline: TimelineItem[] = [
   {
-    year: "2020",
-    label: "Started learning programming & Python",
-    tags: ["Python", "Git"],
-  },
-  {
-    year: "2021",
-    label: "Explored data science, active on Kaggle",
-    tags: ["Pandas", "NumPy", "Scikit-learn", "Kaggle"],
+    year: "2019",
+    label: "Started Software Engineering degree at ITATS",
+    tags: ["Python", "Git", "Problem Solving"],
   },
   {
     year: "2022",
-    label: "Web development — HTML, CSS, JavaScript",
-    tags: ["HTML", "CSS", "JavaScript"],
+    label: "Bangkit Academy — Android Developer path",
+    tags: ["Kotlin", "Android", "SOLID Principles"],
   },
   {
     year: "2023",
-    label: "Deep dive into React.js, first personal project",
-    tags: ["React.js", "Vite", "Tailwind CSS"],
+    label: "Graduated Software Engineering, started web development",
+    tags: ["HTML", "CSS", "JavaScript", "React.js"],
   },
   {
     year: "2024",
-    label: "Next.js & Tailwind CSS — from design to deploy",
-    tags: ["Next.js", "TypeScript", "Vercel", "Figma"],
+    label: "UI/UX Design — Digital Talent Scholarship",
+    tags: ["Figma", "Design Thinking", "Prototyping", "User Research"],
   },
   {
     year: "2025",
-    label: "Building portfolio & open for collaboration",
-    tags: ["Next.js", "Framer Motion", "Supabase"],
+    label: "Data Science Bootcamp at Dibimbing — grade 92/100",
+    tags: ["Python", "SQL", "Scikit-learn", "Streamlit", "EDA"],
+  },
+  {
+    year: "2025",
+    label: "Next.js & Tailwind CSS — from design to deploy",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
   },
   {
     year: "2026",
-    label: "Keep Learning, Building, and Sharing",
+    label: "Keep learning, building, and sharing",
     tags: ["Learning", "Building", "Sharing"],
   },
 ];
