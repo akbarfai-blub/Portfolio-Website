@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { forwardRef } from "react";
 
 type ButtonVariant = "primary" | "outline";
 type ButtonSize = "sm" | "md";
@@ -10,13 +11,12 @@ interface ButtonBaseProps {
 }
 
 type ButtonAsButton = ButtonBaseProps &
-  Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "onClick"> & {
+  React.ButtonHTMLAttributes<HTMLButtonElement> & {
     href?: undefined;
-    onClick?: () => void;
   };
 
 type ButtonAsLink = ButtonBaseProps &
-  Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "href"> & {
+  React.AnchorHTMLAttributes<HTMLAnchorElement> & {
     href: string;
   };
 
@@ -32,12 +32,10 @@ const sizeStyles: Record<ButtonSize, string> = {
   md: "px-6 py-3 text-sm",
 };
 
-export function Button({
-  variant = "primary",
-  size = "md",
-  className,
-  ...props
-}: ButtonProps) {
+export const Button = forwardRef<
+  HTMLButtonElement | HTMLAnchorElement,
+  ButtonProps
+>(({ variant = "primary", size = "md", className, ...props }, ref) => {
   const classes = cn(
     "inline-flex items-center justify-center font-medium rounded-lg transition-opacity cursor-pointer",
     variantStyles[variant],
@@ -45,11 +43,33 @@ export function Button({
     className,
   );
 
-  if ("href" in props && props.href) {
-    const { href, ...rest } = props;
-    return <a href={href} className={classes} {...rest} />;
+  if (props.href !== undefined) {
+    const { href, ...rest } = props as ButtonAsLink;
+    return (
+      <a
+        ref={ref as React.Ref<HTMLAnchorElement>}
+        href={href}
+        className={classes}
+        {...rest}
+      />
+    );
   }
 
-  const { ...rest } = props;
-  return <button className={classes} {...rest} />;
-}
+  const {
+    variant: _v,
+    size: _s,
+    href: _href,
+    ...buttonProps
+  } = props as ButtonAsButton & { variant?: ButtonVariant; size?: ButtonSize };
+
+  return (
+    <button
+      ref={ref as React.Ref<HTMLButtonElement>}
+      type={"button" as const}
+      className={classes}
+      {...(buttonProps as React.ButtonHTMLAttributes<HTMLButtonElement>)}
+    />
+  );
+});
+
+Button.displayName = "Button";
