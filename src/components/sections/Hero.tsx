@@ -12,9 +12,14 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <FadeIn>
-              <span className="inline-block px-3 py-1 text-xs font-medium text-text-secondary border border-border rounded-full mb-6">
-                Frontend Developer
-              </span>
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="inline-block px-3 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">
+                  Frontend Developer
+                </span>
+                <span className="inline-block px-3 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">
+                  Data Science Enthusiast
+                </span>
+              </div>
             </FadeIn>
 
             <FadeIn delay={0.1}>
