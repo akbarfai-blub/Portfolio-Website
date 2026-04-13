@@ -26,6 +26,7 @@ function StatItem({
   useEffect(() => {
     if (!isInView) return;
 
+    let rafId: number;
     let startTime: number;
     const duration = 1500;
     const startValue = 0;
@@ -40,17 +41,22 @@ function StatItem({
       setDisplayValue(Math.round(current));
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        rafId = requestAnimationFrame(animate);
       }
     };
 
-    requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(animate);
+
+    return () => cancelAnimationFrame(rafId);
   }, [isInView, value]);
 
   return (
     <div ref={ref} className="flex-1 flex items-center justify-center relative">
       <div className="text-center px-2">
-        <div className="text-4xl font-bold text-text-primary mb-1">
+        <div
+          className="text-4xl font-bold text-text-primary mb-1"
+          aria-live="polite"
+        >
           {displayValue}
         </div>
         <div className="text-sm text-text-secondary">{label}</div>

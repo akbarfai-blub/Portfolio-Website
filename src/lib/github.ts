@@ -1,6 +1,5 @@
 type GitHubData = {
   repos: number;
-  stars: number;
   followers: number;
   contributions: number;
 };
@@ -10,28 +9,16 @@ export async function getGitHubData(): Promise<GitHubData> {
   const token = process.env.GITHUB_TOKEN;
 
   try {
-    const [userRes, reposRes] = await Promise.all([
-      fetch(`https://api.github.com/users/${username}`, {
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-        next: { revalidate: 3600 },
-      }),
-      fetch(`https://api.github.com/users/${username}/repos?per_page=100&sort=updated`, {
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-        next: { revalidate: 3600 },
-      }),
-    ]);
+    const userRes = await fetch(`https://api.github.com/users/${username}`, {
+      headers: token ? { Authorization: `Bearer ${token}` } : {},
+      next: { revalidate: 3600 },
+    });
 
-    if (!userRes.ok || !reposRes.ok) {
+    if (!userRes.ok) {
       throw new Error("Failed to fetch GitHub data");
     }
 
     const userData = await userRes.json();
-    const reposData = await reposRes.json();
-
-    const totalStars = reposData.reduce(
-      (acc: number, repo: { stargazers_count: number }) => acc + repo.stargazers_count,
-      0
-    );
 
     let contributions = 0;
 
@@ -60,7 +47,8 @@ export async function getGitHubData(): Promise<GitHubData> {
         if (contributionsRes.ok) {
           const contributionsData = await contributionsRes.json();
           contributions =
-            contributionsData?.data?.user?.contributionsCollection?.contributionCalendar?.totalContributions ?? 0;
+            contributionsData?.data?.user?.contributionsCollection
+              ?.contributionCalendar?.totalContributions ?? 0;
         }
       } catch {
         contributions = 0;
@@ -69,14 +57,12 @@ export async function getGitHubData(): Promise<GitHubData> {
 
     return {
       repos: userData.public_repos,
-      stars: totalStars,
       followers: userData.followers,
       contributions,
     };
   } catch {
     return {
       repos: 0,
-      stars: 0,
       followers: 0,
       contributions: 0,
     };
