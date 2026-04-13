@@ -12,19 +12,19 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <FadeIn>
-              <span className="inline-block px-3 py-1 text-xs font-medium text-text-secondary-light dark:text-text-secondary-dark border border-border-light dark:border-border-dark rounded-full mb-6">
+              <span className="inline-block px-3 py-1 text-xs font-medium text-text-secondary border border-border rounded-full mb-6">
                 Frontend Developer
               </span>
             </FadeIn>
 
             <FadeIn delay={0.1}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary-light dark:text-text-primary-dark leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary leading-tight mb-6">
                 Building clean web experiences with React & Next.js
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <p className="text-lg text-text-secondary-light dark:text-text-secondary-dark mb-8 leading-relaxed">
+              <p className="text-lg text-text-secondary mb-8 leading-relaxed">
                 Data science enthusiast. I care about clean code, good UX, and
                 things that actually work.
               </p>
@@ -60,7 +60,7 @@ export function Hero() {
                     stroke="currentColor"
                     strokeWidth="0.5"
                     strokeDasharray="4 4"
-                    className="text-border-light dark:text-border-dark"
+                    className="text-border"
                   />
                 </svg>
               </motion.div>
@@ -83,13 +83,13 @@ export function Hero() {
                     stroke="currentColor"
                     strokeWidth="0.3"
                     strokeDasharray="2 6"
-                    className="text-text-muted-light dark:text-text-muted-dark"
+                    className="text-text-muted"
                   />
                 </svg>
               </motion.div>
 
               <motion.div
-                className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-linear-to-br from-primary-light/10 to-transparent dark:from-btn-primary-dark/10"
+                className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-linear-to-br from-bg-btn-primary/10 to-transparent"
                 animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
                 transition={{
                   duration: 4,
@@ -99,7 +99,7 @@ export function Hero() {
               />
 
               <motion.div
-                className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-linear-to-tr from-text-secondary-light/10 to-transparent dark:from-text-secondary-dark/10"
+                className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-linear-to-tr from-text-secondary/10 to-transparent"
                 animate={{ scale: [1, 1.15, 1], opacity: [0.2, 0.4, 0.2] }}
                 transition={{
                   duration: 5,
@@ -109,7 +109,7 @@ export function Hero() {
               />
 
               <motion.div
-                className="relative w-full h-full rounded-full overflow-hidden border-2 border-border-light dark:border-border-dark"
+                className="relative w-full h-full rounded-full overflow-hidden border-2 border-border"
                 animate={{ y: [0, -8, 0] }}
                 transition={{
                   duration: 4,

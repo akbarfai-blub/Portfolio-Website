@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { useMotionValue, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { FadeIn } from "@/components/ui/FadeIn";
 
 type GitHubStatsProps = {
@@ -50,15 +50,13 @@ function StatItem({
   return (
     <div ref={ref} className="flex-1 flex items-center justify-center relative">
       <div className="text-center px-2">
-        <div className="text-4xl font-bold text-text-primary-light dark:text-text-primary-dark mb-1">
+        <div className="text-4xl font-bold text-text-primary mb-1">
           {displayValue}
         </div>
-        <div className="text-sm text-text-secondary-light dark:text-text-secondary-dark">
-          {label}
-        </div>
+        <div className="text-sm text-text-secondary">{label}</div>
       </div>
       {showDivider && (
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-px h-8 bg-border-light dark:bg-border-dark" />
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-px h-8 bg-border" />
       )}
     </div>
   );

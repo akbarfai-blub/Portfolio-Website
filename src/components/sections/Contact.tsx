@@ -5,19 +5,16 @@ import { cn } from "@/lib/utils";
 
 export function Contact() {
   return (
-    <section
-      id="contact"
-      className="bg-surface-light dark:bg-surface-dark py-20 md:py-24"
-    >
+    <section id="contact" className="bg-bg-surface py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-xl mx-auto text-center">
           <FadeIn>
-            <h2 className="text-2xl md:text-3xl font-bold text-text-primary-light dark:text-text-primary-dark mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
               Let&apos;s Connect
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <p className="text-text-secondary-light dark:text-text-secondary-dark mb-8">
+            <p className="text-text-secondary mb-8">
               Open for collaboration, freelance, or just a good conversation
               about code and data.
             </p>
@@ -27,9 +24,8 @@ export function Contact() {
               <a
                 href="mailto:akbarfai2428@gmail.com"
                 className={cn(
-                  "p-3 rounded-full bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark",
-                  "text-text-secondary-light dark:text-text-secondary-dark",
-                  "hover:text-text-primary-light dark:hover:text-text-primary-dark hover:border-text-muted-light dark:hover:border-text-muted-dark",
+                  "p-3 rounded-full bg-bg-surface border border-border",
+                  "text-text-secondary hover:text-text-primary hover:border-text-muted",
                   "transition-colors",
                 )}
                 aria-label="Email"
@@ -41,9 +37,8 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
-                  "p-3 rounded-full bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark",
-                  "text-text-secondary-light dark:text-text-secondary-dark",
-                  "hover:text-text-primary-light dark:hover:text-text-primary-dark hover:border-text-muted-light dark:hover:border-text-muted-dark",
+                  "p-3 rounded-full bg-bg-surface border border-border",
+                  "text-text-secondary hover:text-text-primary hover:border-text-muted",
                   "transition-colors",
                 )}
                 aria-label="LinkedIn"
@@ -55,9 +50,8 @@ export function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
-                  "p-3 rounded-full bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark",
-                  "text-text-secondary-light dark:text-text-secondary-dark",
-                  "hover:text-text-primary-light dark:hover:text-text-primary-dark hover:border-text-muted-light dark:hover:border-text-muted-dark",
+                  "p-3 rounded-full bg-bg-surface border border-border",
+                  "text-text-secondary hover:text-text-primary hover:border-text-muted",
                   "transition-colors",
                 )}
                 aria-label="GitHub"

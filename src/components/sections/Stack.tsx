@@ -23,13 +23,11 @@ function StackCard({ item, delay }: { item: StackItem; delay: number }) {
   const IconComponent = iconMap[item.icon];
   return (
     <FadeIn delay={delay}>
-      <div className="flex items-center gap-3 px-4 py-3 bg-surface-light dark:bg-surface-dark rounded-lg">
+      <div className="flex items-center gap-3 px-4 py-3 bg-bg-surface rounded-lg">
         {IconComponent && (
-          <IconComponent className="w-5 h-5 text-text-secondary-light dark:text-text-secondary-dark" />
+          <IconComponent className="w-5 h-5 text-text-secondary" />
         )}
-        <span className="text-sm text-text-primary-light dark:text-text-primary-dark">
-          {item.name}
-        </span>
+        <span className="text-sm text-text-primary">{item.name}</span>
       </div>
     </FadeIn>
   );
@@ -40,7 +38,7 @@ export function Stack() {
     <section id="stack" className="py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
-          <h2 className="text-2xl md:text-3xl font-bold text-text-primary-light dark:text-text-primary-dark mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-8">
             Stack
           </h2>
         </FadeIn>
@@ -48,7 +46,7 @@ export function Stack() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <FadeIn>
-              <h3 className="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider mb-4">
+              <h3 className="text-sm font-semibold text-text-muted uppercase tracking-wider mb-4">
                 Frontend
               </h3>
             </FadeIn>
@@ -61,7 +59,7 @@ export function Stack() {
 
           <div>
             <FadeIn>
-              <h3 className="text-sm font-semibold text-text-muted-light dark:text-text-muted-dark uppercase tracking-wider mb-4">
+              <h3 className="text-sm font-semibold text-text-muted uppercase tracking-wider mb-4">
                 Data Science
               </h3>
             </FadeIn>
