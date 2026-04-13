@@ -3,7 +3,7 @@
 My personal portfolio website. Built to replace the "coming soon"
 on my GitHub profile and to have a proper place to show my work.
 
-Live: [akbarfai.dev](https://akbarfai.dev) ← update once deployed
+Live: [akbarfai.dev](https://abbr-portfolio-website.vercel.app/)
 
 ---
 
