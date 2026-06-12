@@ -31,4 +31,18 @@ export const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/akbarfai-blub/portfolio",
   },
-];
+  {
+    title: "D'jto Store",
+    description: "D'jto adalah brand UMKM berbasis di Nganjuk, Jawa Timur, yang menjual produk bawang merah segar (repack) dan bawang goreng hasil produksi petani lokal secara langsung. Website ini menjadi kanal digital pertama brand D'jto untuk menjangkau konsumen di luar jalur distribusi konvensional (tengkulak/pasar).",
+    tags: ["Next.js", "Tailwind CSS", "Vercel", "Next/Image + Cloudinary free"],
+    github: "https://github.com/akbarfai-blub/Toko-Online-Bawang-Merah-Bawang-Goreng-Nganjuk.git",
+    demo: "https://djto.store/",
+  },
+  {
+    title: "Personal Finance Dashboard",
+    description: "A clean, minimalist, and secure personal finance tracking dashboard. Built to monitor daily expenses and income, complete with data visualization and secure user authentication.",
+    tags: ["Next.js", "ailwind CSS v4", "Recharts", "Supabase (PostgreSQL)"],
+    github: "https://github.com/akbarfai-blub/personal-finance-tracker",
+    demo: "-",
+  }
+]
