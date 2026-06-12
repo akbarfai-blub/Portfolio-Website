@@ -11,6 +11,27 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Akbar Fai | Frontend Developer",
   description: "Frontend developer focused on React & Next.js. based in Tulungagung, Indonesia",
+  openGraph: {
+    title: "Akbar Fai",
+    description: "Frontend developer focused on React & Next.js.",
+    url: "https://akbarfai.dev",
+    siteName: "Akbar Fai",
+    type: "website",
+    images: [
+      {
+        url: "/image.png",
+        width: 1200,
+        height: 630,
+        alt: "Akbar Fai | Frontend Developer & Data Science Enthusiast",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Akbar Fai | Frontend Developer",
+    description: "Frontend developer focused on React & Next.js. Data science enthusiast.",
+    images: ["/image.png"],
+  },
 };
 
 export default function RootLayout({

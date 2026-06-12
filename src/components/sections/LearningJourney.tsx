@@ -17,7 +17,7 @@ export function LearningJourney() {
             {timeline.map((item, index) => {
               const isLast = index === timeline.length - 1;
               return (
-                <FadeIn key={item.year} delay={index * 0.1}>
+                <FadeIn key={`${item.year}-${index}`} delay={index * 0.1}>
                   <div className="flex flex-row items-center gap-4">
                     <span className="min-w-10 text-sm font-bold text-right shrink-0 text-text-primary">
                       {item.year}

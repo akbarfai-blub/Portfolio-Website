@@ -123,7 +123,7 @@ export function Hero() {
                 }}
               >
                 <Image
-                  src="/image.png"
+                  src="/profile-picture-circle.png"
                   alt="Akbar Fai"
                   fill
                   className="object-cover"
