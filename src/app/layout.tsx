@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Akbar Fai — Frontend Developer",
-  description: "Frontend developer focused on React & Next.js.",
+  title: "Akbar Fai | Frontend Developer",
+  description: "Frontend developer focused on React & Next.js. based in Tulungagung, Indonesia",
 };
 
 export default function RootLayout({
