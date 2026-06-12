@@ -4,6 +4,7 @@ export type Project = {
   tags: string[];
   github?: string;
   demo?: string;
+  image?: string;
 };
 
 export const projects: Project[] = [
@@ -15,6 +16,7 @@ export const projects: Project[] = [
     github:
       "https://github.com/akbarfai-blub/customer-churn-dashboard-streamlit",
     demo: "https://customer-churn-dashboard-app-p3ecfvqtsr5dxwpebs2laf.streamlit.app/",
+    image: "/images/projects/churn-dashboard.png",
   },
   {
     title: "Personal Finance Dashboard",
@@ -23,6 +25,7 @@ export const projects: Project[] = [
     tags: ["Next.js", "Tailwind CSS", "Supabase", "Vercel"],
     github: "https://github.com/akbarfai-blub/personal-finance-tracker",
     demo: "https://abbr-personal-finance-tracker.vercel.app/",
+    image: "/images/projects/finance-dashboard.png",
   },
   {
     title: "Portfolio Website",
@@ -30,6 +33,8 @@ export const projects: Project[] = [
       "Personal portfolio with a clean minimalist design, dark mode support, and smooth animations.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/akbarfai-blub/portfolio",
+    demo: "https://abbr-portfolio-website.vercel.app/",
+    image: "/images/projects/portfolio-website.jpeg",
   },
   {
     title: "D'jto Store",
@@ -37,12 +42,6 @@ export const projects: Project[] = [
     tags: ["Next.js", "Tailwind CSS", "Vercel", "Next/Image + Cloudinary free"],
     github: "https://github.com/akbarfai-blub/Toko-Online-Bawang-Merah-Bawang-Goreng-Nganjuk.git",
     demo: "https://djto.store/",
-  },
-  {
-    title: "Personal Finance Tracking Dashboard",
-    description: "A clean, minimalist, and secure personal finance tracking dashboard. Built to monitor daily expenses and income, complete with data visualization and secure user authentication.",
-    tags: ["Next.js", "ailwind CSS v4", "Recharts", "Supabase (PostgreSQL)"],
-    github: "https://github.com/akbarfai-blub/personal-finance-tracker",
-    demo: "-",
+    image: "/images/projects/djto-store.jpeg",
   }
 ]

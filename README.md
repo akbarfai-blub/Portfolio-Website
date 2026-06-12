@@ -1,4 +1,4 @@
-# Personal Portfolio — Akbar Fai
+# Personal Portfolio | Akbar Fai
 
 My personal portfolio website. Built to replace the "coming soon"
 on my GitHub profile and to have a proper place to show my work.
