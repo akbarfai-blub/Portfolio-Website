@@ -1,6 +1,8 @@
 import { FadeIn } from "@/components/ui/FadeIn";
 import { GitHubStats } from "@/components/ui/GitHubStats";
 import { getGitHubData } from "@/lib/github";
+import { Button } from "@/components/ui/Button";
+import { Download } from "lucide-react";
 
 export default async function About() {
   const stats = await getGitHubData();
@@ -29,9 +31,21 @@ export default async function About() {
                 and projects that solve real problems.
               </p>
             </FadeIn>
+            <FadeIn delay={0.2}>
+              <Button
+                href="https://drive.google.com/file/d/149QjDoOWim1zdm8y8AOAIPidVhJ6VpsX/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="outline"
+                className="w-full sm:w-auto mt-8"
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Download CV
+              </Button>
+            </FadeIn>
           </div>
 
-          <FadeIn delay={0.2}>
+          <FadeIn delay={0.25}>
             <div className="bg-bg-surface border border-border rounded-2xl p-6">
               <div className="flex items-center gap-2 mb-4">
                 <svg
