@@ -54,7 +54,7 @@ export const projects: Project[] = [
   {
     title: "Batin: Mental Health App",
     description:
-      "An end-to-end UI/UX case study for a mental health app helping teenagers access mental health specialists directly. Covered full design process — user research, persona, empathy map, user flow, wireframing, design system, and usability testing.",
+      "An end-to-end UI/UX case study for a mental health app helping teenagers access mental health specialists directly. Covered full design process user research, persona, empathy map, user flow, wireframing, design system, and usability testing.",
     tags: [
       "Figma",
       "UI/UX Design",
