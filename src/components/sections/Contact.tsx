@@ -1,5 +1,5 @@
 import { Mail } from "lucide-react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaBehance, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { cn } from "@/lib/utils";
 
@@ -57,6 +57,19 @@ export function Contact() {
                 aria-label="GitHub"
               >
                 <FaGithub className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.behance.net/akbfai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "p-3 rounded-full bg-bg-surface border border-border",
+                  "text-text-secondary hover:text-text-primary hover:border-text-muted",
+                  "transition-colors",
+                )}
+                aria-label="Behance"
+              >
+                <FaBehance className="w-5 h-5" />
               </a>
             </div>
           </FadeIn>

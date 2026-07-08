@@ -5,6 +5,7 @@ export type Project = {
   github?: string;
   demo?: string;
   image?: string;
+  category?: "dev" | "design";
 };
 
 export const projects: Project[] = [
@@ -17,6 +18,7 @@ export const projects: Project[] = [
       "https://github.com/akbarfai-blub/customer-churn-dashboard-streamlit",
     demo: "https://customer-churn-dashboard-app-p3ecfvqtsr5dxwpebs2laf.streamlit.app/",
     image: "/images/projects/churn-dashboard.png",
+    category: "dev",
   },
   {
     title: "Personal Finance Dashboard",
@@ -26,6 +28,7 @@ export const projects: Project[] = [
     github: "https://github.com/akbarfai-blub/personal-finance-tracker",
     demo: "https://abbr-personal-finance-tracker.vercel.app/",
     image: "/images/projects/finance-dashboard.png",
+    category: "dev",
   },
   {
     title: "Portfolio Website",
@@ -35,13 +38,32 @@ export const projects: Project[] = [
     github: "https://github.com/akbarfai-blub/portfolio",
     demo: "https://abbr-portfolio-website.vercel.app/",
     image: "/images/projects/portfolio-website.jpeg",
+    category: "dev",
   },
   {
     title: "D'jto Store",
-    description: "D'jto is an MSME brand based in Nganjuk, East Java, that sells fresh repackaged shallots and fried shallots sourced directly from local farmers. This website serves as D'jto's first digital channel to reach consumers beyond conventional distribution networks, such as middlemen and traditional markets.",
+    description:
+      "D'jto is an MSME brand based in Nganjuk, East Java, that sells fresh repackaged shallots and fried shallots sourced directly from local farmers. This website serves as D'jto's first digital channel to reach consumers beyond conventional distribution networks, such as middlemen and traditional markets.",
     tags: ["Next.js", "Tailwind CSS", "Vercel", "Next/Image + Cloudinary free"],
-    github: "https://github.com/akbarfai-blub/Toko-Online-Bawang-Merah-Bawang-Goreng-Nganjuk.git",
+    github:
+      "https://github.com/akbarfai-blub/Toko-Online-Bawang-Merah-Bawang-Goreng-Nganjuk.git",
     demo: "https://djto.store/",
     image: "/images/projects/djto-store.jpeg",
-  }
+    category: "dev",
+  },
+  {
+    title: "Batin: Mental Health App",
+    description:
+      "An end-to-end UI/UX case study for a mental health app helping teenagers access mental health specialists directly. Covered full design process — user research, persona, empathy map, user flow, wireframing, design system, and usability testing.",
+    tags: [
+      "Figma",
+      "UI/UX Design",
+      "Design Thinking",
+      "Usability Testing",
+      "Wireframing",
+    ],
+    demo: "https://www.behance.net/gallery/195215725/Batin-FGA",
+    image: "/images/projects/Batin1.png",
+    category: "design",
+  },
 ]
