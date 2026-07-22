@@ -54,7 +54,7 @@ function StatItem({
     <div ref={ref} className="flex-1 flex items-center justify-center relative">
       <div className="text-center px-2">
         <div
-          className="text-4xl font-bold text-text-primary mb-1"
+          className="text-4xl font-bold font-mono text-text-primary mb-1"
           aria-live="polite"
         >
           {displayValue}

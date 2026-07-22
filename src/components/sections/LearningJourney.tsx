@@ -6,7 +6,7 @@ export function LearningJourney() {
   return (
     <section id="journey" className="py-20 md:py-28">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-8 font-heading">
           <FadeIn>Learning Journey</FadeIn>
         </h2>
 
@@ -19,7 +19,7 @@ export function LearningJourney() {
               return (
                 <FadeIn key={`${item.year}-${index}`} delay={index * 0.1}>
                   <div className="flex flex-row items-center gap-4">
-                    <span className="min-w-10 text-sm font-bold text-right shrink-0 text-text-primary">
+                    <span className="min-w-10 text-sm font-bold font-mono text-right shrink-0 text-text-primary">
                       {item.year}
                     </span>
 

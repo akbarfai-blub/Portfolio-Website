@@ -9,11 +9,21 @@
   --color-text-secondary: #9ca3af;
   --color-text-muted: #6b7280;
   --color-border: #2d3748;
-  --font-sans: var(--font-inter), sans-serif;
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-heading: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-body: var(--font-geist-sans);
 }
 
 @layer base {
   html {
     @apply bg-bg-base text-text-primary font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+  body {
+    font-family: var(--font-body);
+    line-height: 1.65;
   }
 }

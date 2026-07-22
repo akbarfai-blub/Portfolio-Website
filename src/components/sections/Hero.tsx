@@ -23,7 +23,7 @@ export function Hero() {
             </FadeIn>
 
             <FadeIn delay={0.1}>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary leading-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary leading-tight mb-6 font-heading">
                 Building clean web experiences with React & Next.js
               </h1>
             </FadeIn>

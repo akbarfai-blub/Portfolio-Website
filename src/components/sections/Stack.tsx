@@ -38,7 +38,7 @@ export function Stack() {
     <section id="stack" className="py-20 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn>
-          <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-8 font-heading">
             Stack
           </h2>
         </FadeIn>

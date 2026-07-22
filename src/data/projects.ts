@@ -42,8 +42,7 @@ export const projects: Project[] = [
   },
   {
     title: "D'jto Store",
-    description:
-      "D'jto is an MSME brand based in Nganjuk, East Java, that sells fresh repackaged shallots and fried shallots sourced directly from local farmers. This website serves as D'jto's first digital channel to reach consumers beyond conventional distribution networks, such as middlemen and traditional markets.",
+    description: "D'jto is an MSME brand based in Nganjuk, East Java, that sells fresh repackaged shallots and fried shallots sourced directly from local farmers.",
     tags: ["Next.js", "Tailwind CSS", "Vercel", "Next/Image + Cloudinary free"],
     github:
       "https://github.com/akbarfai-blub/Toko-Online-Bawang-Merah-Bawang-Goreng-Nganjuk.git",

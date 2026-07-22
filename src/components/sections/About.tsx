@@ -13,7 +13,7 @@ export default async function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <FadeIn>
-              <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-6 font-heading">
                 About
               </h2>
             </FadeIn>

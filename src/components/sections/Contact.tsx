@@ -9,7 +9,7 @@ export function Contact() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="max-w-xl mx-auto text-center">
           <FadeIn>
-            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-text-primary mb-4 font-heading">
               Let&apos;s Connect
             </h2>
           </FadeIn>
