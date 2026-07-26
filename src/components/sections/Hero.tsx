@@ -14,24 +14,23 @@ export function Hero() {
             <FadeIn>
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="inline-block px-3 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">
-                  Frontend Developer
+                  Web Developer
                 </span>
                 <span className="inline-block px-3 py-1 text-xs font-medium text-text-secondary border border-border rounded-full">
-                  Data Science Enthusiast
+                  Data Analyst
                 </span>
               </div>
             </FadeIn>
 
             <FadeIn delay={0.1}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-primary leading-tight mb-6 font-heading">
-                Building clean web experiences with React & Next.js
+                Data analyst who builds his own tools. React, Python, and everything in between.
               </h1>
             </FadeIn>
 
             <FadeIn delay={0.2}>
               <p className="text-lg text-text-secondary mb-8 leading-relaxed">
-                Data science enthusiast. I care about clean code, good UX, and
-                things that actually work.
+                I analyze data, build dashboards, and create the tools I need along the way.
               </p>
             </FadeIn>
 

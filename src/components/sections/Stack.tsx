@@ -21,13 +21,34 @@ import { frontendStack, dataStack, StackItem } from "@/data/stack";
 
 function StackCard({ item, delay }: { item: StackItem; delay: number }) {
   const IconComponent = iconMap[item.icon];
+  const isPrimary = item.level === "primary";
+
   return (
     <FadeIn delay={delay}>
-      <div className="flex items-center gap-3 px-4 py-3 bg-bg-surface rounded-lg">
+      <div
+        className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+          isPrimary
+            ? "bg-bg-surface border border-border"
+            : "bg-bg-surface/50 border border-border/40 opacity-65"
+        }`}
+      >
         {IconComponent && (
-          <IconComponent className="w-5 h-5 text-text-secondary" />
+          <IconComponent
+            className={`w-5 h-5 ${
+              isPrimary ? "text-text-primary" : "text-text-secondary"
+            }`}
+          />
         )}
-        <span className="text-sm text-text-primary">{item.name}</span>
+        <span
+          className={`text-sm ${isPrimary ? "text-text-primary" : "text-text-secondary"}`}
+        >
+          {item.name}
+        </span>
+        {isPrimary && (
+          <span className="ml-auto text-[10px] font-mono text-text-muted tracking-wider uppercase">
+            Core
+          </span>
+        )}
       </div>
     </FadeIn>
   );

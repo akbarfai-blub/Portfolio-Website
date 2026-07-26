@@ -5,11 +5,11 @@ import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Akbar Fai | Frontend Developer",
-  description: "Frontend developer focused on React & Next.js. based in Tulungagung, Indonesia",
+  title: "Akbar Fai | Data Analyst & Web Developer",
+  description: "Data analyst who builds his own tools — Python, React, and everything in between. Based in Tulungagung, Indonesia.",
   openGraph: {
     title: "Akbar Fai",
-    description: "Frontend developer focused on React & Next.js.",
+    description: "Data analyst who builds his own tools — Python, React, and everything in between.",
     url: "https://akbarfai.dev",
     siteName: "Akbar Fai",
     type: "website",
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
         url: "/image.png",
         width: 1200,
         height: 630,
-        alt: "Akbar Fai | Frontend Developer & Data Science Enthusiast",
+        alt: "Akbar Fai | Data Analyst & Web Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Akbar Fai | Frontend Developer",
-    description: "Frontend developer focused on React & Next.js. Data science enthusiast.",
+    title: "Akbar Fai | Data Analyst & Web Developer",
+    description: "Data analyst who builds his own tools — Python, React, and everything in between.",
     images: ["/image.png"],
   },
 };

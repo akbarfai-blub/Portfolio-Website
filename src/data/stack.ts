@@ -7,19 +7,19 @@ export type StackItem = {
 };
 
 export const frontendStack: StackItem[] = [
-  { name: "React.js", icon: "SiReact", level: "primary" },
   { name: "Next.js", icon: "SiNextdotjs", level: "primary" },
-  { name: "TypeScript", icon: "SiTypescript", level: "primary" },
-  { name: "JavaScript", icon: "SiJavascript", level: "primary" },
   { name: "Tailwind CSS", icon: "SiTailwindcss", level: "primary" },
-  { name: "Git", icon: "SiGit", level: "primary" },
+  { name: "React.js", icon: "SiReact", level: "enthusiast" },
+  { name: "TypeScript", icon: "SiTypescript", level: "enthusiast" },
+  { name: "JavaScript", icon: "SiJavascript", level: "enthusiast" },
+  { name: "Git", icon: "SiGit", level: "enthusiast" },
   { name: "Figma", icon: "SiFigma", level: "enthusiast" },
 ];
 
 export const dataStack: StackItem[] = [
   { name: "Python", icon: "SiPython", level: "primary" },
-  { name: "Pandas", icon: "SiPandas", level: "enthusiast" },
-  { name: "Scikit-learn", icon: "SiScikitlearn", level: "enthusiast" },
-  { name: "SQL", icon: "SiPostgresql", level: "enthusiast" },
+  { name: "Pandas", icon: "SiPandas", level: "primary" },
+  { name: "Scikit-learn", icon: "SiScikitlearn", level: "primary" },
+  { name: "SQL", icon: "SiPostgresql", level: "primary" },
   { name: "Google Colab", icon: "SiGooglecolab", level: "enthusiast" },
 ];

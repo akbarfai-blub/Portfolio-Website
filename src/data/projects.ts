@@ -31,16 +31,6 @@ export const projects: Project[] = [
     category: "dev",
   },
   {
-    title: "Portfolio Website",
-    description:
-      "Personal portfolio with a clean minimalist design, dark mode support, and smooth animations.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/akbarfai-blub/portfolio",
-    demo: "https://abbr-portfolio-website.vercel.app/",
-    image: "/images/projects/portfolio-website.jpeg",
-    category: "dev",
-  },
-  {
     title: "D'jto Store",
     description: "D'jto is an MSME brand based in Nganjuk, East Java, that sells fresh repackaged shallots and fried shallots sourced directly from local farmers.",
     tags: ["Next.js", "Tailwind CSS", "Vercel", "Next/Image + Cloudinary free"],
@@ -64,5 +54,15 @@ export const projects: Project[] = [
     demo: "https://www.behance.net/gallery/195215725/Batin-FGA",
     image: "/images/projects/Batin1.png",
     category: "design",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "Personal portfolio with a clean minimalist design, dark mode support, and smooth animations.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/akbarfai-blub/portfolio",
+    demo: "https://abbr-portfolio-website.vercel.app/",
+    image: "/images/projects/portfolio-website.jpeg",
+    category: "dev",
   },
 ]
